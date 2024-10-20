@@ -39,4 +39,4 @@ Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/book-search-app.git
+   git clone https://github.com/debolacodes/bookle.git
