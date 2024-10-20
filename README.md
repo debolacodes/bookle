@@ -18,9 +18,9 @@ Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 
 #### Screenshots
 
-| Empty State (No Search Performed) | Search Results | Details Page |
-| --------------------------------- | -------------- | ------------ |
-| ![Empty State](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/empty_u5njga.jpg) | ![Search Result](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/results_fy5bod.jpg) | ![Details Page](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/popup_afiapv.jpg) |
+| Empty State (No Search Performed) | Search Results | Details Page | Pagination |
+| --------------------------------- | -------------- | ------------ | ------------ |
+| ![Empty State](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/empty_u5njga.jpg) | ![Search Result](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/results_fy5bod.jpg) | ![Details Page](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/popup_afiapv.jpg) |![Pagination](https://res.cloudinary.com/farmz2u/image/upload/v1729436854/bookle/bwdyh1nmfnsin64zf6g5.jpg)
 
 
 ### Features
@@ -58,6 +58,6 @@ Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 - **JavaScript Features:** Incorporates modern **JavaScript ES6+** features throughout the codebase.
 - **Code Quality:** Follows best practices for clean and maintainable code, with clear and concise comments where necessary.
 - **Error Handling:** Implements basic **error handling** for API requests to improve user experience during failures.
-- **Styling:** Styled using **CSS**, considering a CSS framework for improved aesthetics.
+- **Styling:** Styled using **TailwindCSS** with a little vanilla **CSS** for styling the scroll bar.
 - **Testing:** Unit tests implemented using **Jest** to ensure code reliability and functionality.
 
