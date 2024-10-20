@@ -1,5 +1,5 @@
 import { BookSearchProps } from '@/interfaces/interface';
-import search from './search.svg'
+import search from '../assets/search.svg'
 import bookstacks from '../images/book-stack.png'
 
 // Define the props interface
