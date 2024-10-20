@@ -2,6 +2,14 @@
 
 # Book Search Application
 
+## Author
+
+Adebola Oyenuga (Senior Frontend Engineer)
+
+## Purpose
+
+DrugStoc Assessment
+
 ## Project Description
 
 This web application allows users to search for books using the Google Books API and display the results. It features an intuitive user interface that enhances the book searching experience.
