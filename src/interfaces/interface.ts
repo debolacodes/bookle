@@ -15,3 +15,9 @@ export interface Book {
     };
   };
 }
+
+export interface BookSearchProps {
+  searchTerm:string;
+  setSearchTerm: (query: string) => void;
+  handleSearch:() => void;  
+}

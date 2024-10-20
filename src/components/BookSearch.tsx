@@ -1,13 +1,8 @@
-
+import { BookSearchProps } from '@/interfaces/interface';
+import search from './search.svg'
 import bookstacks from '../images/book-stack.png'
-import search from '../assets/search.svg'
-// Define the props interface
-interface BookSearchProps {
-  searchTerm:string;
-  setSearchTerm: (query: string) => void;
-  handleSearch:() => void;  
-}
 
+// Define the props interface
 const BookSearch: React.FC<BookSearchProps> = ({searchTerm, 
   setSearchTerm, 
   handleSearch,
