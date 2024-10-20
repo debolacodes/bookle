@@ -17,8 +17,11 @@ const Modal: React.FC<ModalProps>= ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50 ">
-      <div className="bg-white p-6 shadow-lg max-w-md w-full rounded-[20px]">
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center pt-[100px] z-50 ">
+      <div className="bg-white p-6 shadow-lg max-w-[500px] w-full rounded-[20px]
+      max-h-[calc(100vh-150px)] 
+      ">
+        <div className="p-[20px] overflow-y-auto h-full">
             <div
                 className="h-[40px] w-full flex flex-row-reverse"
             >
@@ -77,6 +80,7 @@ const Modal: React.FC<ModalProps>= ({
                 </div>
             </div>
             }
+        </div>
       </div>
     </div>
   );

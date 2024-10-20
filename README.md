@@ -1,28 +1,27 @@
-Add the Link to Solution: https://bookle-teal.vercel.app/ to the README below
+# ![Logo](https://res.cloudinary.com/farmz2u/image/upload/v1729435354/bookle/book_rtickh.svg)
 
 # Book Search Application
-
 
 ## Project Description
 
 This web application allows users to search for books using the Google Books API and display the results. It features an intuitive user interface that enhances the book searching experience.
 
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/book-search-app.git
+
 ### Live Demo
 
 Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 
+#### Screenshots
 
-## Components
+| Empty State (No Search Performed) | Search Results | Details Page |
+| --------------------------------- | -------------- | ------------ |
+| ![Empty State](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/empty_u5njga.jpg) | ![Search Result](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/results_fy5bod.jpg) | ![Details Page](https://res.cloudinary.com/farmz2u/image/upload/v1729435328/bookle/popup_afiapv.jpg) |
 
-- **BookList.tsx:** Component that lists the books from the Google Books API.
-- **BookSearch.tsx:** Component for the search input and buttons.
-- **EmptyBook.tsx:** Component that displays the UI for an empty state in the book list.
-- **Modal.tsx:** Component for the modal that shows the book details when clicked.
-- **Pagination.tsx:** Component for pagination in the book list.
-
-## Pages
-
-- **Book.tsx:** The parent component for the search functionality and book list.
 
 ### Features
 
@@ -38,6 +37,20 @@ Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 - **Pagination/Infinite Scrolling:** Implements pagination for effective display management when there are more than 10 results.
 - **Responsive Design:** Fully responsive design ensures an optimal viewing experience on both desktop and mobile devices.
 
+
+
+## Components
+
+- **BookList.tsx:** Component that lists the books from the Google Books API.
+- **BookSearch.tsx:** Component for the search input and buttons.
+- **EmptyBook.tsx:** Component that displays the UI for an empty state in the book list.
+- **Modal.tsx:** Component for the modal that shows the book details when clicked.
+- **Pagination.tsx:** Component for pagination in the book list.
+
+## Pages
+
+- **Book.tsx:** The parent component for the search functionality and book list.
+
 ## Technical Requirements
 
 - **Framework:** Built using **React.js** with **TypeScript** for type safety and enhanced maintainability.
@@ -48,8 +61,3 @@ Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 - **Styling:** Styled using **CSS**, considering a CSS framework for improved aesthetics.
 - **Testing:** Unit tests implemented using **Jest** to ensure code reliability and functionality.
 
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/debolacodes/bookle.git
