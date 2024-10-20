@@ -141,18 +141,19 @@ const BookList: React.FC<BookListProps> = ({books,
                     />
                   )}
                   <div className=''>
-                    <h2 className='text-[20px] text-montserrat font-medium text-gray-900 leading-[24px] mb-[20px]'>{book.volumeInfo.title}</h2>
-                    <div className='text-[10px] flex text-montserrat flex-wrap'>
+                  <div className='text-[10px] flex flex-col text-montserrat flex-wrap'>
+                      <div className='text-[17px] mb-[10px]'>{book.volumeInfo.title}</div>
+                      <span className="font-bold mr-[10px]">Author{book.volumeInfo.authors.length > 1 ? 's :': ' :'}</span>  
                       {book.volumeInfo.authors && book.volumeInfo.authors.length > 0 ? (
                         book.volumeInfo.authors.map((author, index) => (
-                          <div key={index}>{author} | </div>
+                          <div key={index} className="mr-[5px]">{author} {book.volumeInfo.authors.length !== index+1 ? ',' : ''} </div>
                         ))
                       ) : (
                         <div>No author</div>
                       )}
                     </div>
-                    <div className='mt-[10px] text-[10px]'>Published: {book.volumeInfo.publishedDate}
-                    </div>
+                    <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Published:</span> {book.volumeInfo.publishedDate}</div>
+                    
                   </div>
                 </div>
               </div>

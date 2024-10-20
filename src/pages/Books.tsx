@@ -60,11 +60,12 @@ function Books() {
         <div 
         className='
         w-full 
-        h-[73px] 
+        h-[70px] 
         bg-violet-50 
         p-[10px]
         shadow-sm
-        rounded-t-[20px]
+        rounded-[20px]
+        mb-[10px]
         '
         >
             <BookSearch 

@@ -17,8 +17,12 @@ const Modal: React.FC<ModalProps>= ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center pt-[100px] z-50 ">
-      <div className="bg-white p-6 shadow-lg max-w-[500px] w-full rounded-[20px]
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center pt-[50px] z-50 ">
+      <div className="
+      bg-white p-6 
+      shadow-lg 
+      max-w-[500px] 
+      w-full rounded-[20px]
       max-h-[calc(100vh-150px)] 
       ">
         <div className="p-[20px] overflow-y-auto h-full">
@@ -55,18 +59,19 @@ const Modal: React.FC<ModalProps>= ({
                   <div className=''>
                     <h2 className='text-[20px] text-montserrat font-medium text-violet-900 leading-[24px] mb-[20px]'>{selectedBook.volumeInfo.title}</h2>
                     <div className='text-[10px] flex text-montserrat flex-wrap'>
+                      <span className="font-bold mr-[10px]">Author{selectedBook.volumeInfo.authors.length > 1 ? 's :': ' '}</span>  
                       {selectedBook.volumeInfo.authors && selectedBook.volumeInfo.authors.length > 0 ? (
                         selectedBook.volumeInfo.authors.map((author, index) => (
-                          <div key={index}>{author} | </div>
+                          <div key={index} className="mr-[5px]">{author} {selectedBook.volumeInfo.authors.length !== index+1 ? ',' : ''} </div>
                         ))
                       ) : (
                         <div>No author</div>
                       )}
                     </div>
-                    <div className='mt-[10px] text-[10px]'>Published: {selectedBook.volumeInfo.publishedDate}</div>
-                    <div className='mt-[10px] text-[10px]'>Print type: {selectedBook.volumeInfo.printType}</div>
-                    <div className='mt-[10px] text-[10px]'>Language: {selectedBook.volumeInfo.language}</div>
-                    <div className='mt-[10px] text-[10px]'>Rating: {selectedBook.volumeInfo.maturityRating === "NOT_MATURE"
+                    <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Published:</span> {selectedBook.volumeInfo.publishedDate}</div>
+                    <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Print type:</span> {selectedBook.volumeInfo.printType}</div>
+                    <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Language:</span> {selectedBook.volumeInfo.language}</div>
+                    <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Rating:</span>{selectedBook.volumeInfo.maturityRating === "NOT_MATURE"
                     ?"General":"For mature Audience only"  }</div>
 
                   </div>
