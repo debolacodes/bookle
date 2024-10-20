@@ -1,4 +1,3 @@
-# ![Logo](https://res.cloudinary.com/farmz2u/image/upload/v1729435354/bookle/book_rtickh.svg)
 <center>
 <img src="https://res.cloudinary.com/farmz2u/image/upload/v1729435354/bookle/book_rtickh.svg" alt="drawing" width="200"/>
 </center>
