@@ -11,6 +11,19 @@ This web application allows users to search for books using the Google Books API
 
 Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 
+
+## Components
+
+- **BookList.tsx:** Component that lists the books from the Google Books API.
+- **BookSearch.tsx:** Component for the search input and buttons.
+- **EmptyBook.tsx:** Component that displays the UI for an empty state in the book list.
+- **Modal.tsx:** Component for the modal that shows the book details when clicked.
+- **Pagination.tsx:** Component for pagination in the book list.
+
+## Pages
+
+- **Book.tsx:** The parent component for the search functionality and book list.
+
 ### Features
 
 - **Search Functionality:** Users can enter keywords to search for books using a user-friendly search bar.
