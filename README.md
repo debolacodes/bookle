@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+Add the Link to Solution: https://bookle-teal.vercel.app/ to the README below
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Book Search Application
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
 
-## Expanding the ESLint configuration
+This web application allows users to search for books using the Google Books API and display the results. It features an intuitive user interface that enhances the book searching experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Live Demo
 
-- Configure the top-level `parserOptions` property like this:
+Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Search Functionality:** Users can enter keywords to search for books using a user-friendly search bar.
+- **Visually Appealing Results:** Search results are displayed attractively, showcasing:
+  - Book title
+  - Author
+  - Publication date
+  - Book cover image
+- **Detailed View:** Users can click on a book to view additional details, including:
+  - Description
+  - Publisher information
+- **Pagination/Infinite Scrolling:** Implements pagination for effective display management when there are more than 10 results.
+- **Responsive Design:** Fully responsive design ensures an optimal viewing experience on both desktop and mobile devices.
+
+## Technical Requirements
+
+- **Framework:** Built using **React.js** with **TypeScript** for type safety and enhanced maintainability.
+- **API Integration:** Utilizes the **Google Books API** for seamless book data fetching.
+- **JavaScript Features:** Incorporates modern **JavaScript ES6+** features throughout the codebase.
+- **Code Quality:** Follows best practices for clean and maintainable code, with clear and concise comments where necessary.
+- **Error Handling:** Implements basic **error handling** for API requests to improve user experience during failures.
+- **Styling:** Styled using **CSS**, considering a CSS framework for improved aesthetics.
+- **Testing:** Unit tests implemented using **Jest** to ensure code reliability and functionality.
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/book-search-app.git

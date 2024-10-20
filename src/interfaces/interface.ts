@@ -4,13 +4,12 @@ export interface Book {
   volumeInfo: {
     title: string;
     authors: string[];
-    description: string;
-    language: string;
-    maturityRating: string;
-    previewLink: string;
-    printType: string;
-    publishedDate: string;
-    publisher: string;
+    description?: string;
+    language?: string;
+    maturityRating?: string;
+    printType?: string;
+    publishedDate?: string;
+    publisher?: string;
     imageLinks?: {
       thumbnail: string;
     };

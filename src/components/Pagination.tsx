@@ -37,7 +37,7 @@ const Pagination: React.FC<PaginationProps> = (
           <div className='w-full max-w-[320px] m-auto h-[49px]  flex justify-between'>
             <div className={`h-[40px] !px-[10px] leading-[40px] 
                 text-dmsans cursor-pointer 
-                ${currentPage !== 1 ? 'bg-violet-100 text-violet-500':'bg-violet-100 text-violet-200'}
+                ${currentPage !== 1 ? 'bg-violet-100 text-violet-700':'bg-violet-100 text-violet-200'}
                 `}
                 onClick={()=>{
                   if(currentPage > 1){setCurrentPage(currentPage - 1)}
@@ -48,7 +48,7 @@ const Pagination: React.FC<PaginationProps> = (
                     return(
                       <div className={`h-[40px] !px-[10px] leading-[40px] 
                       text-white text-montserrat cursor-pointer
-                      ${currentPage === thisPage ? 'bg-violet-700 text-violet-100': 'bg-violet-100 text-violet-500'}
+                      ${currentPage === thisPage ? 'bg-violet-700 text-violet-100': 'bg-violet-100 !text-violet-700'}
                       `}
                       key={index}
                       onClick={()=>{
@@ -61,7 +61,7 @@ const Pagination: React.FC<PaginationProps> = (
 
             <div className={`h-[40px] !px-[10px] leading-[40px] 
               text-montserrat cursor-pointer 
-              ${currentPage < pages.length ? 'bg-violet-100 text-violet-500':'bg-violet-100 text-violet-200'}
+              ${currentPage < pages.length ? 'bg-violet-100 text-violet-700':'bg-violet-100 text-violet-200'}
               `}
               onClick={()=>{
               if(currentPage < pages.length){setCurrentPage(currentPage + 1)}

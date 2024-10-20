@@ -50,7 +50,9 @@ function Books() {
 
   return (
     <div className='w-screen h-screen 
-    sm:p-6 md:p-8 lg:p-10 xl:p-12 overflow-x-hidden
+    sm:p-6 md:p-8 lg:p-10 xl:p-12 
+    overflow-x-hidden 
+    g-gray-50
     '>
         <div>
             <img src={book} className='w-[150px] m-auto mb-[50px]'/>
@@ -74,7 +76,6 @@ function Books() {
 
         <div className='
         p-[10px] 
-        bg-gray-50
         h-full
         
         '>

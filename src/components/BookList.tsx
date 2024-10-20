@@ -99,7 +99,7 @@ const BookList: React.FC<BookListProps> = ({books,
       font-montserrat
       text-[12px]
       '>
-        Loading...
+        Searching for books...
       </div>}
       {error && <p>{error}</p>}
 
@@ -126,7 +126,7 @@ const BookList: React.FC<BookListProps> = ({books,
                   gap-[15px] 
                   rounded-[20px]
                   hover:shadow-sm
-                  hover:bg-white
+                  hover:bg-violet-50
                   cursor-pointer
                   `}
                   onClick={()=>{
