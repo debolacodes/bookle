@@ -143,7 +143,9 @@ const BookList: React.FC<BookListProps> = ({books,
                   <div className=''>
                   <div className='text-[10px] flex flex-col text-montserrat flex-wrap'>
                       <div className='text-[17px] mb-[10px]'>{book.volumeInfo.title}</div>
-                      <span className="font-bold mr-[10px]">Author{book.volumeInfo.authors.length > 1 ? 's :': ' :'}</span>  
+                       {typeof book.volumeInfo.authors !== "undefined" &&
+                        <span className="font-bold mr-[10px]">Author{book.volumeInfo.authors.length > 1 ? 's :': ' :'}</span> 
+                       } 
                       {book.volumeInfo.authors && book.volumeInfo.authors.length > 0 ? (
                         book.volumeInfo.authors.map((author, index) => (
                           <div key={index} className="mr-[5px]">{author} {book.volumeInfo.authors.length !== index+1 ? ',' : ''} </div>
