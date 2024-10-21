@@ -19,3 +19,8 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #3B0764; 
   }
+
+  html, body, div, span{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+  }

@@ -59,16 +59,17 @@ const Modal: React.FC<ModalProps>= ({
                   <div className=''>
                     <h2 className='text-[20px] text-montserrat font-medium text-violet-900 leading-[24px] mb-[20px]'>{selectedBook.volumeInfo.title}</h2>
                     <div className='text-[10px] flex text-montserrat flex-wrap'>
-                    {typeof selectedBook.volumeInfo.authors !== "undefined" &&
-                      <span className="font-bold mr-[10px]">Author{selectedBook.volumeInfo.authors.length > 1 ? 's :': ' '}</span>  
-                    }
+                    <div>
+                      {typeof selectedBook.volumeInfo.authors !== "undefined" &&
+                        <span className="font-bold mr-[10px]">Author{selectedBook.volumeInfo.authors.length > 1 ? 's:':':'}</span> 
+                      }
                       {selectedBook.volumeInfo.authors && selectedBook.volumeInfo.authors.length > 0 ? (
                         selectedBook.volumeInfo.authors.map((author, index) => (
-                          <div key={index} className="mr-[5px]">{author} {selectedBook.volumeInfo.authors.length !== index+1 ? ',' : ''} </div>
-                        ))
-                      ) : (
-                        <div>No author</div>
-                      )}
+                          <span key={index} className="mr-[5px]">{author} {selectedBook.volumeInfo.authors.length !== index+1 ? ',' : ''} </span>))
+                        ) : (
+                          <span>No author</span>
+                        )}
+                    </div>
                     </div>
                     <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Published:</span> {selectedBook.volumeInfo.publishedDate}</div>
                     <div className='mt-[10px] text-[10px]'><span className="font-bold mr-[10px]">Print type:</span> {selectedBook.volumeInfo.printType}</div>
