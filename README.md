@@ -6,7 +6,7 @@
 
 ## Author
 
-Adebola Oyenuga (Senior Frontend Engineer)
+Adebola Oyenuga
 
 ## Project Description
 
