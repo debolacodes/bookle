@@ -38,7 +38,7 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search for books..."
         />
-        <div 
+        <button 
         className='
         leading-[30px]
         px-[20px]
@@ -52,7 +52,10 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
         shadow-md
         font-montserrat
         flex
+        !outline-none
+        border-0
         '
+        name="search"
         onClick={()=>handleSearch()}
         >
           <div className='
@@ -61,7 +64,7 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
           '>
             <img src={search} className='w-[20px] h-[20px] m-[5px] object-center object-contain' />
           </div>
-          <span className='text-lg hidden !sm:hidden md:block lg:block'>Search</span></div>
+          <span className='text-lg hidden !sm:hidden md:block lg:block'>Search</span></button>
     </div>
   );
 };
