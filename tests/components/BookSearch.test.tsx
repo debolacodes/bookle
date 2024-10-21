@@ -1,3 +1,6 @@
+
+/* eslint no-use-before-define: 0 */ 
+
 import React from 'react'
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
 import BookSearch from '../../src/components/BookSearch';
