@@ -65,5 +65,5 @@ Check out the live version of the app [here](https://bookle-teal.vercel.app/).
 - **Code Quality:** Follows best practices for clean and maintainable code, with clear and concise comments where necessary.
 - **Error Handling:** Implements basic **error handling** for API requests to improve user experience during failures.
 - **Styling:** Styled using **TailwindCSS** with a little vanilla **CSS** for styling the scroll bar.
-- **Testing:** Unit tests implemented using **Jest** to ensure code reliability and functionality.
+- **Testing:** Unit tests implemented using **Jest**/**Vitest** to ensure code reliability and functionality.
 
