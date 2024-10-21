@@ -58,9 +58,6 @@ const Modal: React.FC<ModalProps>= ({
                   )}
                   <div className=''>
                     <h2 className='text-[20px] text-montserrat font-medium text-violet-900 leading-[24px] mb-[20px]'>{selectedBook.volumeInfo.title}</h2>
-                    <div className='text-[10px] text-montserrat
-                    grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 leading-[25px] gap-[10px]
-                    '>
                     <div className="md:col-span-2">
                       {typeof selectedBook.volumeInfo.authors !== "undefined" &&
                         <span className="font-bold mr-[5px]">Author{selectedBook.volumeInfo.authors.length > 1 ? 's:':':'}</span> 
@@ -72,6 +69,10 @@ const Modal: React.FC<ModalProps>= ({
                           <span>No author</span>
                         )}
                     </div>
+                    <div className='text-[10px] text-montserrat
+                    grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 leading-[25px] gap-[10px]
+                    '>
+                    
                     
                     <div className='text-[10px]'><span className="font-bold mr-[5px]">Published:</span> {selectedBook.volumeInfo.publishedDate}</div>
                     <div className='text-[10px]'><span className="font-bold mr-[5px]">Print type:</span> {selectedBook.volumeInfo.printType}</div>
