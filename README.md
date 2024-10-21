@@ -6,7 +6,7 @@
 
 ## Author
 
-Adebola Oyenuga
+Adebola Oyenuga (debolacodes@gmail.com)
 
 ## Project Description
 
