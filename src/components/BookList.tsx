@@ -166,7 +166,11 @@ const BookList: React.FC<BookListProps> = ({books,
           </div>
         </div>
         : 
-        <EmptyBook />
+        <div>
+          <EmptyBook />
+          <EmptyBook />
+          <EmptyBook />
+        </div>
         }
       
 

@@ -17,7 +17,7 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
   };
   
   return (
-    <div className='bg-white w-full flex justify-between gap-[10px] rounded-[20px] pl-[20px]'>
+    <div className='bg-white w-full flex justify-between gap-[10px] rounded-[10px] pl-[20px]'>
         <div
           className='h-[50px] w-[70px] p-[10px]'
         >
@@ -48,7 +48,7 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
         text-white
         font-bold
         gap-[5px]
-        rounded-[20px]
+        rounded-[10px]
         shadow-md
         font-montserrat
         flex

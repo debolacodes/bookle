@@ -50,7 +50,7 @@ function Books() {
 
   return (
     <div className='w-screen h-screen 
-    sm:p-6 md:p-8 lg:p-10 xl:p-12 
+    p-6 sm:p-6 md:p-8 lg:p-10 xl:p-12 
     overflow-x-hidden 
     g-gray-50
     '>
