@@ -29,7 +29,7 @@ function Books() {
 
     try {
       const response = await axios.get(
-        `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}&maxResults=40`
+        `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}&maxResults=70`
       );
       setSearchedTerm(searchTerm)
       setBooks(response.data.items || []);
