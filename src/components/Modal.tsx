@@ -58,7 +58,7 @@ const Modal: React.FC<ModalProps>= ({
                   )}
                   <div className=''>
                     <h2 className='text-[20px] text-montserrat font-medium text-violet-900 leading-[24px] mb-[20px]'>{selectedBook.volumeInfo.title}</h2>
-                    <div className="md:col-span-2">
+                    <div className="md:col-span-2 text-[10px] text-montserrat leading-[25px]">
                       {typeof selectedBook.volumeInfo.authors !== "undefined" &&
                         <span className="font-bold mr-[5px]">Author{selectedBook.volumeInfo.authors.length > 1 ? 's:':':'}</span> 
                       }
