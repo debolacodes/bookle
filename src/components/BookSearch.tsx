@@ -61,7 +61,7 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
           '>
             <img src={search} className='w-[20px] h-[20px] m-[5px] object-center object-contain' />
           </div>
-          Search</div>
+          <span className='text-lg hidden !sm:hidden md:block lg:block'>Search</span></div>
     </div>
   );
 };
