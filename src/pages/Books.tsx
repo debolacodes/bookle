@@ -60,9 +60,9 @@ function Books() {
         <div 
         className='
         w-full 
-        h-[70px] 
+        h-[60px] 
         bg-violet-50 
-        p-[10px]
+        p-[5px]
         shadow-sm
         rounded-full
         mb-[30px]

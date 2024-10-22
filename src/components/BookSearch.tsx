@@ -19,9 +19,9 @@ const BookSearch: React.FC<BookSearchProps> = ({searchTerm,
   return (
     <div className='bg-white w-full flex justify-between gap-[10px] rounded-full pl-[20px]'>
         <div
-          className='h-[50px] w-[70px] p-[10px]'
+          className='h-[30px] w-[30px] py-[15px]'
         >
-          <img src={bookstacks} className='w-[30px] h-[30px] object-contain'/>
+          <img src={bookstacks} className='w-[20px] h-[20px] object-contain'/>
         </div>
         <input
           type="text"
