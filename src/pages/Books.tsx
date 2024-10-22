@@ -64,8 +64,8 @@ function Books() {
         bg-violet-50 
         p-[10px]
         shadow-sm
-        rounded-[20px]
-        mb-[10px]
+        rounded-full
+        mb-[30px]
         '
         >
             <BookSearch 
