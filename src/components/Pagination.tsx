@@ -1,13 +1,5 @@
 
-import { Book } from '../interfaces/interface';
-interface PaginationProps {
-  pages:number[];
-  pagesToShow:number[];
-  currentPage: number;
-  pagesCount:number;
-  items:Book[];
-  setCurrentPage: (query: number) => void;
-}
+import { PaginationProps } from '../interfaces/interface';
 
 
 const Pagination: React.FC<PaginationProps> = (

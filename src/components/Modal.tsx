@@ -73,7 +73,6 @@ const Modal: React.FC<ModalProps>= ({
                     grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 leading-[25px] gap-[10px]
                     '>
                     
-                    <div className='text-[12px]'><span className="font-bold mr-[5px]">Publisher:</span> {selectedBook.volumeInfo.publisher ? selectedBook.volumeInfo.publisher: 'Not available'}</div>
                     <div className='text-[12px]'><span className="font-bold mr-[5px]">Published:</span> {selectedBook.volumeInfo.publishedDate}</div>
                     <div className='text-[12px]'><span className="font-bold mr-[5px]">Print type:</span> {selectedBook.volumeInfo.printType}</div>
                     <div className='text-[12px]'><span className="font-bold mr-[5px]">Language:</span> {selectedBook.volumeInfo.language}</div>
