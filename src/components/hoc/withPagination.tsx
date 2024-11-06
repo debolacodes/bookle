@@ -11,7 +11,7 @@ const withPagination = <P extends object>(Component: React.ComponentType<P>) => 
     const { books } = props;
     
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10; // You can adjust this number based on your requirement
+    const itemsPerPage = 10;
 
     const pagesCount = Math.ceil(books.length / itemsPerPage);
     
@@ -20,7 +20,7 @@ const withPagination = <P extends object>(Component: React.ComponentType<P>) => 
       return Array.from({ length: pagesCount }, (_, index) => index + 1);
     }, [pagesCount]);
 
-    // Calculate the books to display on the current page
+    
     const currentBooks = useMemo(() => {
       const startIndex = (currentPage - 1) * itemsPerPage;
       return books.slice(startIndex, startIndex + itemsPerPage);
